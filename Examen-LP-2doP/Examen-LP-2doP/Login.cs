@@ -35,8 +35,10 @@ namespace Examen_LP_2doP
                 MessageBox.Show("Usuario Inactivo");
                 return;
             }
-            FrmProducto frmproducto = new FrmProducto();
-            frmproducto.Show();
+            FrmMenu frmMenu = new FrmMenu();
+            frmMenu.Show();
+            this.Hide();
+            
         }
     }
 }
