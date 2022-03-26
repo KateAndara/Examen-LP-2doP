@@ -10,23 +10,25 @@ namespace Datos.Entidades
     {
         public int IdPedido { get; set; }
         public string Nombre { get; set; }
-        public DateTime Fecha { get; set; }
-        public int Edad { get; set; }
+        public string Descripcion { get; set; }
+        public int CantidadPedido { get; set; }
         public Decimal Precio { get; set; }
         public Decimal Total { get; set; }
+        public DateTime Fecha { get; set; }
 
         public Pedido()
         {
         }
 
-        public Pedido(int idPedido, string nombre, DateTime fecha, int edad, decimal precio, decimal total)
+        public Pedido(int idPedido, string nombre, string descripcion, int cantidadPedido, decimal precio, decimal total, DateTime fecha)
         {
             IdPedido = idPedido;
             Nombre = nombre;
-            Fecha = fecha;
-            Edad = edad;
+            Descripcion = descripcion;
+            CantidadPedido = cantidadPedido;
             Precio = precio;
             Total = total;
+            Fecha = fecha;
         }
     }
 }
